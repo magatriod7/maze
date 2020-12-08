@@ -4,11 +4,11 @@ import routes from "../router";
 
 const boardRouter = express.Router();
 
-boardRouter.get(routes.board, (req, res) => board);
-boardRouter.get(routes.noticeBoard, (req, res) => noticeBoard);
-boardRouter.get(routes.freeBoard, (req, res) => freeBoard);
-boardRouter.get(routes.questionBoard, (req, res) => questionBoard);
-boardRouter.get(routes.pictureBoard, (req, res) => pictureBoard);
+boardRouter.get(routes.board, board);
+boardRouter.get(routes.noticeBoard, noticeBoard);
+boardRouter.get(routes.freeBoard, freeBoard);
+boardRouter.get(routes.questionBoard, questionBoard);
+boardRouter.get(routes.pictureBoard, pictureBoard);
 
 
 export default boardRouter;

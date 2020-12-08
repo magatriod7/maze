@@ -4,6 +4,6 @@ import routes from "../router";
 
 const exhibitionRouter = express.Router();
 
-exhibitionRouter.get(routes.exhibition, (req, res) => exhibition);
+exhibitionRouter.get(routes.exhibition, exhibition);
 
 export default exhibitionRouter;

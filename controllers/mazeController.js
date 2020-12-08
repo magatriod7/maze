@@ -1,4 +1,3 @@
-export const maze = (req, res) => maze;
-export const introduceMaze = (req, res) => introduceMaze;
-export const ruleMaze = (req, res) => ruleMaze;
-
+export const maze = (req, res) => res.render("maze");
+export const introduceMaze = (req, res) => res.render("introduceMaze");
+export const ruleMaze = (req, res) => res.render("ruleMaze");

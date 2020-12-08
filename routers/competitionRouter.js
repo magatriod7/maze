@@ -4,6 +4,6 @@ import routes from "../router";
 
 const competitionRouter = express.Router();
 
-competitionRouter.get(routes.competition, (req, res) => competition);
+competitionRouter.get(routes.competition, competition);
 
 export default competitionRouter;

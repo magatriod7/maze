@@ -4,10 +4,10 @@ import routes from "../router";
 
 const memberRouter = express.Router();
 
-memberRouter.get(routes.member, (req, res) => member);
-memberRouter.get(routes.listMember, (req, res) => listMember);
-memberRouter.get(routes.studyMember, (req, res) => studyMember);
-memberRouter.get(routes.downloadMember, (req, res) => downloadMember);
-memberRouter.get(routes.boardMember, (req, res) => boardMember);
+memberRouter.get(routes.member, member);
+memberRouter.get(routes.listMember, listMember);
+memberRouter.get(routes.studyMember, studyMember);
+memberRouter.get(routes.downloadMember, downloadMember);
+memberRouter.get(routes.boardMember, boardMember);
 
 export default memberRouter;

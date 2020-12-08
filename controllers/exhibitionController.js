@@ -1,1 +1,1 @@
-export const exhibition = (req, res) => res.send("exhibition");
+export const exhibition = (req, res) => res.render("exhibition");

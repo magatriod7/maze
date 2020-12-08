@@ -4,8 +4,8 @@ import routes from "../router";
 
 const mazeRouter = express.Router();
 
-mazeRouter.get(routes.maze, (req, res) => maze);
-mazeRouter.get(routes.introduceMaze, (req, res) => introduceMaze);
-mazeRouter.get(routes.ruleMaze, (req, res) => ruleMaze);
+mazeRouter.get(routes.maze, maze);
+mazeRouter.get(routes.introduceMaze, introduceMaze);
+mazeRouter.get(routes.ruleMaze, ruleMaze);
 
 export default mazeRouter;

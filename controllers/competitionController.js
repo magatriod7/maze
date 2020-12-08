@@ -1,1 +1,1 @@
-export const competition = (req, res) => res.send("competition");
+export const competition = (req, res) => res.render("competition");

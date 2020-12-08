@@ -14,9 +14,9 @@ import mazeRouter from "./routers/mazeRouter";
 import memberRouter from "./routers/memberRouter";
 import routes from "./router";
 
-
 const app = express();
 
+app.set("view engine", "pug");
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -30,6 +30,6 @@ app.use(routes.board, boardRouter);
 app.use(routes.competition, competitionRouter);
 app.use(routes.exhibition, exhibitionRouter);
 app.use(routes.maze, mazeRouter);
-//app.use(routes.member, memberRouter);
+app.use(routes.member, memberRouter);
 
 export default app;
